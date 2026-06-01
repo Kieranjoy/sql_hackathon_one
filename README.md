@@ -14,7 +14,7 @@ Additional Data (time_bound tables):
 - Daily Follow and engagement metrics by Information Lab Pages
 
 Output:
-- A single table where each row is a record of measured engagement stats per day
+- A single table where each row is a record of measured engagement stats per day and the most active post
 
 Plan:
 - Explore angles for what a final table(s) could consist of for data analysis based on the raw data
@@ -33,7 +33,7 @@ over time which could explore frequency, topics, author (branch of the company b
 - This is the loose schema I used to help figure out how the tables possibly connect and what the context of each table was. This helped me explore
 the data and what the final contents of the end table could contain.
 
--In my final table I used 5/7 available tables omitting ugc_post_sHare_statistics and organization_ugc_post as none of their fields 
+- In my final table I used 5/7 available tables omitting "ugc_post_share_statistics" and "organization_ugc_post" as none of their fields 
 were useful for my end goal. Additionally, out of the 66 total fields available, only 13 were used to construct the final engagement analysis table 
 as the rest were either empty or not useful such as vanity_name, lifetime_state etc.
 
@@ -51,7 +51,7 @@ Final Result + Future considerations:
 analyse engagement over time and various factors that affect it to help optimise future social media posts.
 
 ![Finalised schema](Final_schema_sql1.png "Final schema")
-- The final schema shows what fields were kept and used in the final build and highlights how many of these fields were ultimately disregarded for the aforementioned reasons.
+- The final schema shows what fields were kept and used in the final build and highlights how many of these fields were ultimately disregarded.
 As so many fields were NULL or redundant finding possible angles to explore felt relatively intuitive following the brief but understanding how the tables related and the 
 context of the data took some trial and error to finally nail down.
 
