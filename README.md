@@ -39,6 +39,9 @@ when the data was brought into snowflake rather than the data itself or the end 
 - I assumed for media_title anything NULL was related to the same post as it fell under or above, especially as it had a different media type so I chose to exclude the NULL 
 values so that any engagement recorded was primaly based on the topic of the content rather than the individual media that comprises it. 
 
+![Finalised schema](Final_schema_sql1.png "Schema")
+
+
 - I finally also chose to exclude engagement records before the first recorded post, this was to focus primarily on the impact posting has on the company's social media engagement.
 
 Final Result + Future considerations:
